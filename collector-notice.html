@@ -280,7 +280,7 @@ document.getElementById('cl_LabMasterLoc').textContent = localStorage.getItem("c
 
 <div id="showtext1">
 <br>
-<strong>
+<strong> 
 <span id="Company2"></span></strong> needs a <br>
 <strong>
 <span id="fedtype"></span>
@@ -295,8 +295,17 @@ document.getElementById('cl_LabMasterLoc').textContent = localStorage.getItem("c
 <strong>
 <span id="showtests"></span> <br>
 
-<span id="showpre"></span> <br>
+<span id="showpre"></span>
 </strong>
+
+
+<div id="showtext2">
+
+<strong>
+ Please use an electronic chain of custody.
+</strong>
+
+</div>
 
 
 </td>
@@ -517,7 +526,6 @@ document.getElementById('showpre').textContent = $showpre;
 
 </script>
 
-
 <script>
 $(document).ready(function(){
 
@@ -528,8 +536,10 @@ localStorage.getItem("rt_completecheck").trim() == "yestest"
 {
 //$("#showtext1").hide(1);
 $("#showtext1").show(1);
+$("#showtext2").show(1);
 }else{
 $("#showtext1").hide();
+$("#showtext2").hide();
 }	
 	
 });
